@@ -1,6 +1,6 @@
 {
   "SDKVersion": 1,
-  "Author": "AJAZZ Monitorian Plugin",
+  "Author": "druidblack",
   "Name": "Monitorian — Яркость монитора",
   "Description": "Управление яркостью через Monitorian с помощью кнопок и энкодера AJAZZ Stream Dock.",
   "Icon": "static/logo.png",
