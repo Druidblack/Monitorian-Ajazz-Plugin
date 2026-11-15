@@ -1,0 +1,14 @@
+{
+  "name": "monitorian-ajazz-plugin",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Monitorian brightness control for AJAZZ Stream Dock",
+  "main": "plugin/index.js",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "test": "node --test plugin/test/*.test.js",
+    "check": "node --check plugin/index.js && node --check plugin/lib/monitorian.js && node --check plugin/lib/controller.js && node --check plugin/lib/polling.js && node --check plugin/lib/websocket.js"
+  }
+}

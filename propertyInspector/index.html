@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Monitorian · AJAZZ</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+  <header><img src="../static/logo.png" alt=""><span><strong>Monitorian</strong><small>Управление яркостью монитора</small></span></header>
+  <section id="stepWrap">
+    <label for="step">Шаг изменения яркости, %</label>
+    <input type="number" id="step" min="1" max="25" step="1" value="5">
+    <div class="hint">Изменение выбранной яркости за нажатие или шаг энкодера (1–25%).</div>
+  </section>
+  <section id="applyDelayWrap">
+    <label for="applyDelay">Задержка применения яркости, мс</label>
+    <input type="number" id="applyDelay" min="100" max="1000" step="50" value="300">
+    <div class="hint">Новое значение сразу показывается на кнопках и энкодере. Через выбранное время после последнего изменения оно передаётся Monitorian. Рекомендуется 300 мс.</div>
+  </section>
+  <section id="presetWrap">
+    <label for="preset">Устанавливать при нажатии, %</label>
+    <input type="number" id="preset" min="0" max="100" step="1" value="50">
+    <div class="hint" id="presetHint">Уровень яркости при нажатии кнопки.</div>
+  </section>
+  <section>
+    <label for="monitorianPath">Путь к Monitorian.exe <span class="optional">(необязательно)</span></label>
+    <input id="monitorianPath" type="text" placeholder="Автоматический поиск Monitorian.exe" spellcheck="false">
+    <div class="hint">Оставьте пустым для автоматического поиска. Если программа не найдена, укажите полный путь к .exe.</div>
+  </section>
+  <footer>Управление выполняется командами Monitorian /get и /set. Для внешних мониторов включите DDC/CI.</footer>
+</main>
+<script src="index.js"></script>
+</body>
+</html>

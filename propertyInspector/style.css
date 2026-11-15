@@ -1,0 +1,18 @@
+:root {color-scheme:dark;font-family:Segoe UI,Arial,sans-serif;font-size:13px}
+*{box-sizing:border-box}
+body{margin:0;background:#171b25;color:#e7e9f0;}
+main{padding:12px 13px;max-width:380px}
+header{display:flex;align-items:center;gap:10px;margin-bottom:16px}
+header img{width:42px;height:42px;border-radius:11px}
+header strong{font-size:16px;display:block;margin-bottom:3px}
+header small,.hint,.optional{color:#aeb6c8}
+section{margin-bottom:16px}
+label{display:block;font-weight:600;margin-bottom:7px}
+input,select,button{font:inherit;max-width:100%;width:100%;background:#272e3b;border:1px solid #475267;border-radius:7px;color:#fff;padding:9px;outline:none}
+input:focus,select:focus,button:focus{border-color:#70b3ff}
+button{background:#263c57;cursor:pointer;margin-top:9px}
+button:hover{background:#32577c}
+.hint{font-size:11px;line-height:1.45;margin-top:6px}
+.status{font-size:11px;margin-top:7px;line-height:1.4;color:#94d1ab;white-space:normal;word-break:break-word}
+.status.error{color:#ffa9a9}
+footer{font-size:11px;line-height:1.55;border-top:1px solid #333c4c;padding-top:12px;color:#aeb6c8}

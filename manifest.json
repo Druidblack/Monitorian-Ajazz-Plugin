@@ -1,0 +1,130 @@
+{
+  "SDKVersion": 1,
+  "Author": "AJAZZ Monitorian Plugin",
+  "Name": "Monitorian — Яркость монитора",
+  "Description": "Управление яркостью через Monitorian с помощью кнопок и энкодера AJAZZ Stream Dock.",
+  "Icon": "static/logo.png",
+  "Category": "Monitorian",
+  "CategoryIcon": "static/logo.png",
+  "Version": "1.0.0",
+  "URL": "https://github.com/emoacht/Monitorian",
+  "CodePathWin": "plugin/index.js",
+  "OS": [
+    {
+      "Platform": "windows",
+      "MinimumVersion": "10"
+    }
+  ],
+  "Nodejs": {
+    "Version": "20"
+  },
+  "Software": {
+    "MinimumVersion": "3.10.188.226"
+  },
+  "Actions": [
+    {
+      "UUID": "com.openai.streamdock.monitorian.brightness-up",
+      "Name": "Увеличить яркость",
+      "Tooltip": "Увеличение яркости на заданный шаг",
+      "Icon": "static/up.png",
+      "States": [
+        {
+          "Image": "static/up.png",
+          "TitleAlignment": "bottom",
+          "FontSize": "12"
+        }
+      ],
+      "Controllers": [
+        "Keypad",
+        "Information"
+      ],
+      "DisableAutomaticStates": true,
+      "UserTitleEnabled": true,
+      "SupportedInMultiActions": true,
+      "PropertyInspectorPath": "propertyInspector/index.html"
+    },
+    {
+      "UUID": "com.openai.streamdock.monitorian.brightness-down",
+      "Name": "Уменьшить яркость",
+      "Tooltip": "Уменьшение яркости на заданный шаг",
+      "Icon": "static/down.png",
+      "States": [
+        {
+          "Image": "static/down.png",
+          "TitleAlignment": "bottom",
+          "FontSize": "12"
+        }
+      ],
+      "Controllers": [
+        "Keypad",
+        "Information"
+      ],
+      "DisableAutomaticStates": true,
+      "UserTitleEnabled": true,
+      "SupportedInMultiActions": true,
+      "PropertyInspectorPath": "propertyInspector/index.html"
+    },
+    {
+      "UUID": "com.openai.streamdock.monitorian.brightness-preset",
+      "Name": "Установить яркость",
+      "Tooltip": "Установка заданного уровня яркости",
+      "Icon": "static/preset.png",
+      "States": [
+        {
+          "Image": "static/preset.png",
+          "TitleAlignment": "bottom",
+          "FontSize": "12"
+        }
+      ],
+      "Controllers": [
+        "Keypad",
+        "Information"
+      ],
+      "DisableAutomaticStates": true,
+      "UserTitleEnabled": true,
+      "SupportedInMultiActions": true,
+      "PropertyInspectorPath": "propertyInspector/index.html"
+    },
+    {
+      "UUID": "com.openai.streamdock.monitorian.brightness-status",
+      "Name": "Текущая яркость",
+      "Tooltip": "Показывает яркость; нажатие обновляет её",
+      "Icon": "static/status.png",
+      "States": [
+        {
+          "Image": "static/status.png",
+          "TitleAlignment": "bottom",
+          "FontSize": "12"
+        }
+      ],
+      "Controllers": [
+        "Keypad",
+        "Information"
+      ],
+      "DisableAutomaticStates": true,
+      "UserTitleEnabled": false,
+      "SupportedInMultiActions": false,
+      "PropertyInspectorPath": "propertyInspector/index.html"
+    },
+    {
+      "UUID": "com.openai.streamdock.monitorian.brightness-encoder",
+      "Name": "Яркость (энкодер)",
+      "Tooltip": "Вращение: изменить яркость; нажатие: установленное значение",
+      "Icon": "static/encoder.png",
+      "States": [
+        {
+          "Image": "static/encoder.png",
+          "TitleAlignment": "bottom",
+          "FontSize": "12"
+        }
+      ],
+      "Controllers": [
+        "Knob"
+      ],
+      "DisableAutomaticStates": true,
+      "UserTitleEnabled": false,
+      "SupportedInMultiActions": true,
+      "PropertyInspectorPath": "propertyInspector/index.html"
+    }
+  ]
+}
